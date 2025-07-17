@@ -11,4 +11,5 @@
 }
 
 .blink {
-  animation: 
+  animation: blink 1.5s infinite;
+}
