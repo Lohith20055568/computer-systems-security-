@@ -8,7 +8,7 @@ import {
   signin
 } from '../controllers/authController.js';
 
-import User from '../models/User.js'; // 🟡 Add this line
+import User from '../models/User.js'; //  Add this line
 
 const router = express.Router();
 
@@ -19,7 +19,7 @@ router.get('/verified-users', getVerifiedUsers);
 router.post('/signup', signup);
 router.post('/signin', signin);
 
-// ✅ Add this route to get user details by email
+//  Add this route to get user details by email
 router.get('/:email', async (req, res) => {
   try {
     const user = await User.findOne({ email: req.params.email });

@@ -25,7 +25,7 @@ router.post('/send', async (req, res) => {
     res.status(201).json({ message: 'Message saved successfully' });
 
   } catch (error) {
-    console.error('❌ Error saving message:', error.message);
+    console.error(' Error saving message:', error.message);
     res.status(500).json({ error: 'Server error' });
   }
 });
@@ -48,7 +48,7 @@ router.get('/history', async (req, res) => {
 
     res.status(200).json(messages);
   } catch (err) {
-    console.error('❌ Error fetching chat history:', err.message);
+    console.error('Error fetching chat history:', err.message);
     res.status(500).json({ error: 'Server error' });
   }
 });

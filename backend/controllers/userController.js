@@ -1,6 +1,6 @@
 import User from '../models/User.js';
 
-// ✅ Mark User Online (called after OTP + fingerprint verification)
+// Mark User Online (called after OTP + fingerprint verification)
 export const markUserOnline = async (req, res) => {
   const { email } = req.body;
   try {
@@ -21,7 +21,7 @@ export const markUserOnline = async (req, res) => {
   }
 };
 
-// ✅ Get Verified + Online + Fingerprint Verified Users
+// Get Verified + Online + Fingerprint Verified Users
 export const getVerifiedUsers = async (req, res) => {
   try {
     const users = await User.find({

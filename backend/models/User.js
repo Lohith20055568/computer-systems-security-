@@ -14,5 +14,5 @@ const UserSchema = new mongoose.Schema({
 
 const User = mongoose.model('User', UserSchema);
 
-// ✅ EXPORT LIKE THIS:
+//  EXPORT LIKE THIS:
 export default User;
